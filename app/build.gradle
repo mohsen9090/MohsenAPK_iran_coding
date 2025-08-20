@@ -6,8 +6,12 @@ plugins {
 android {
     namespace "com.myoxford24.app"
     compileSdk 34
+    namespace "com.myoxford24.app"
+    compileSdk 34
 
     defaultConfig {
+        minSdk 23
+        targetSdk 34
         applicationId "com.myoxford24.app"
         minSdk 26
         targetSdk 34
