@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myoxford24.app">
+
+    <!-- برای وب‌ویو/شبکه -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:label="MyOxford24"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="false">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|keyboardHidden|uiMode">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="myoxford24.com"/>
+                <data android:scheme="https" android:host="www.myoxford24.com"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
